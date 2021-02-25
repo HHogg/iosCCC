@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A69FA6625E7E9C700014E4E /* bitrise_configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A69FA6525E7E9C700014E4E /* bitrise_configuration.plist */; };
+		4A6F05162518FB820092DF12 /* Trace in Frameworks */ = {isa = PBXBuildFile; productRef = 4A6F05152518FB820092DF12 /* Trace */; };
 		5C09A4D024D30BA10043038E /* UserDefaulltsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C09A4CF24D30BA10043038E /* UserDefaulltsRepository.swift */; };
 		5C157A6D2306FACA0088E712 /* BarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C157A6C2306FACA0088E712 /* BarItemView.swift */; };
 		5C1B716C24D3433C00DDA8A3 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1B716B24D3433C00DDA8A3 /* CurrenciesViewModel.swift */; };
@@ -44,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A69FA6525E7E9C700014E4E /* bitrise_configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = bitrise_configuration.plist; sourceTree = "<group>"; };
 		5C09A4CF24D30BA10043038E /* UserDefaulltsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaulltsRepository.swift; sourceTree = "<group>"; };
 		5C157A6C2306FACA0088E712 /* BarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarItemView.swift; sourceTree = "<group>"; };
 		5C1B716B24D3433C00DDA8A3 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A6F05162518FB820092DF12 /* Trace in Frameworks */,
 				5C4EE4A722FF62AD000B898E /* Expression in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +130,7 @@
 		5C34763F22F71C56007F9694 = {
 			isa = PBXGroup;
 			children = (
+				4A69FA6525E7E9C700014E4E /* bitrise_configuration.plist */,
 				5C34764A22F71C56007F9694 /* CurrencyConverterCalculator */,
 				5C34764922F71C56007F9694 /* Products */,
 			);
@@ -272,6 +277,7 @@
 			name = CurrencyConverterCalculator;
 			packageProductDependencies = (
 				5C4EE4A622FF62AD000B898E /* Expression */,
+				4A6F05152518FB820092DF12 /* Trace */,
 			);
 			productName = CurrencyConverterCalculator;
 			productReference = 5C34764822F71C56007F9694 /* CurrencyConverterCalculator.app */;
@@ -303,6 +309,7 @@
 			mainGroup = 5C34763F22F71C56007F9694;
 			packageReferences = (
 				5C4EE4A522FF62AD000B898E /* XCRemoteSwiftPackageReference "Expression" */,
+				4A6F05142518FB820092DF12 /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */,
 			);
 			productRefGroup = 5C34764922F71C56007F9694 /* Products */;
 			projectDirPath = "";
@@ -320,6 +327,7 @@
 			files = (
 				5CF436832308126000164126 /* Currencies.json in Resources */,
 				5C34765822F71C56007F9694 /* Preview Assets.xcassets in Resources */,
+				4A69FA6625E7E9C700014E4E /* bitrise_configuration.plist in Resources */,
 				5C34765522F71C56007F9694 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CurrencyConverterCalculator/Preview\\ Content";
-				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				DEVELOPMENT_TEAM = FWLBDHJ6BK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CurrencyConverterCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,6 +505,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l",
+					z,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mustafaozhan.CurrencyConverterCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -510,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CurrencyConverterCalculator/Preview\\ Content";
-				DEVELOPMENT_TEAM = 72SA8V3WYL;
+				DEVELOPMENT_TEAM = FWLBDHJ6BK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CurrencyConverterCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +533,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l",
+					z,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mustafaozhan.CurrencyConverterCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -549,6 +571,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4A6F05142518FB820092DF12 /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitrise-io/trace-cocoa-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.26;
+			};
+		};
 		5C4EE4A522FF62AD000B898E /* XCRemoteSwiftPackageReference "Expression" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nicklockwood/Expression.git";
@@ -560,6 +590,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4A6F05152518FB820092DF12 /* Trace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A6F05142518FB820092DF12 /* XCRemoteSwiftPackageReference "trace-cocoa-sdk" */;
+			productName = Trace;
+		};
 		5C4EE4A622FF62AD000B898E /* Expression */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5C4EE4A522FF62AD000B898E /* XCRemoteSwiftPackageReference "Expression" */;

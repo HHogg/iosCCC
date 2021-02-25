@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Trace
 
 
 @main
@@ -15,6 +16,7 @@ struct App: SwiftUI.App {
     // MARK: - Property - App
     
     @StateObject var viewModel = AppViewModel()
+    private let trace = Trace.shared
     
     
     // MARK: - Property - Scene
